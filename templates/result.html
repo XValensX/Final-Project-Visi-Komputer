@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Results</title>
+</head>
+<body>
+    <h1>Detection Results</h1>
+    <div>
+        <h2>Detection Images:</h2>
+        {% for image in detected_images %}
+            <img src="{{ image }}" alt="Detection Result" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+        {% endfor %}
+    </div>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
